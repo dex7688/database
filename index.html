@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <p>dasdf</p>
+</body>
+
+<script>
+  window.localStorage.setItem('name1', 'name1 입니다')
+  window.localStorage.setItem('name2', 'name2 입니다')
+  window.localStorage.setItem('name3', 'name3 입니다')
+  window.localStorage.setItem('name4', 'name4 입니다')
+  window.localStorage.setItem('name5', 'name5 입니다')
+
+  for (let i = 0; i < window.localStorage.length; i++) {
+    const key = window.localStorage.key(i)
+    const value = window.localStorage.getItem(key);
+    console.log(value);
+  }
+</script>
+
+</html>
